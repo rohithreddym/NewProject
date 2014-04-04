@@ -1,0 +1,39 @@
+{
+  "name": "node-training",
+  "description": "Simple 101 tutorial",
+  "version": "0.0.1",
+  "author": "Thomas Beutler",
+  "dependencies": {
+    "q": "~0.9.7"
+    },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "supertest": "~0.8.1",
+    "istanbul": "~0.1.44",
+    "jshint": "~2.3.0",
+    "nock": "~0.23.0",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0",
+    "proxyquire": "~0.5.1",
+    "yo": "~1.0.4",
+    "chai-as-promised": "~4.1.0",
+    "mocha-teamcity-reporter": "0.0.2",
+    "jshint-teamcity-reporter": "0.0.1"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcbeutler/node-training"
+  },
+  "engines": {
+    "node": ">=0.10.21"
+  },
+  "scripts": {
+    "start": "node app",
+    "test": "node node_modules/mocha/bin/_mocha --recursive --reporter spec",
+    "watch": "node node_modules/mocha/bin/_mocha --watch",
+    "cover": "node node_modules/istanbul/lib/cli.js node_modules/mocha/bin/_mocha",
+    "jshint": "node node_modules/jshint/bin/jshint -c config/.jshintrc app test app.js"
+  }
+}

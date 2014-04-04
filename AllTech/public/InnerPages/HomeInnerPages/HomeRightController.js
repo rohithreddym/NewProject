@@ -1,0 +1,3 @@
+﻿function HomeRightController($scope, $http) {
+
+}

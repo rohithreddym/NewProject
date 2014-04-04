@@ -1,0 +1,3 @@
+﻿function AngularMasterContorller($scope, $http) {
+
+}
